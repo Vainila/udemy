@@ -134,6 +134,9 @@ class SinglyLinkedList {
       }
       return this;
    }
+   search(value){
+      
+   }
 }
 
 let list = new SinglyLinkedList();
@@ -146,7 +149,7 @@ list.print();
 console.log(list.insert("bla", 2));
 list.print();
 list.reverse();
-list.print();
+list.print(); 
 
 // console.log(list.pop(), list.tail);
 // console.log(list.value);
