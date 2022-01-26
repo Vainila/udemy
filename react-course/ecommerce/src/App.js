@@ -8,18 +8,25 @@ import JacketsPage from "./pages/JacketsPage/JacketsPage.component";
 import SneakersPage from "./pages/SneakersPage/SneakersPage.component";
 import WomenPage from "./pages/WomenPage/WomenPage.component";
 import MenPage from "./pages/MenPage/MenPage.component";
-
+import ShopPage from "./pages/ShopPage/Shop.component";
+import HeaderComponent from "./components/Header/Header.component";
 const App =()=>  
    (
+      <div>
+      <HeaderComponent/>
       <Routes>
-         <Route path={"/"} element={<HomePage />}/>        
-         <Route path={"/hats"} element={<HatsPage/>} />
-         <Route path={"/jackets"} element={<JacketsPage/>} />
-         <Route path={"/sneakers"} element={<SneakersPage/>} />
-         <Route path={"/women"} element={<WomenPage/>} />
-         <Route path={"/men"} element={<MenPage/>} />
-
-      </Routes>);
+      
+      <Route path={"/shop"} element={<ShopPage />}/>        
+      <Route path={"/"} element={<HomePage />}/>        
+      <Route path={"/hats"} element={<HatsPage/>} />
+      <Route path={"/jackets"} element={<JacketsPage/>} />
+      <Route path={"/sneakers"} element={<SneakersPage/>} />
+      <Route path={"/women"} element={<WomenPage/>} />
+      <Route path={"/men"} element={<MenPage/>} />
+      
+      </Routes>
+      </div>
+      );
    
 
 
