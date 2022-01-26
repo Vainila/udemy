@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Directory from "../../components/directory/directory.component";
 
 
-import "./homepage.styles.scss";
+import "./HomePage.styles.scss";
 
-const HomePage = () => (
+const HomePage = (props) => {
+   console.log(props);
+   return (
    <div className="homepage">
+      
       <Directory/>
-   </div>
-)
+   </div>);
+}
 
 
 export default HomePage;
